@@ -1,0 +1,103 @@
+<!doctype html>
+<!--
+	Basic HTML page setup.
+-->
+<html lang="en">
+<head>
+	<!--META TAG-->
+    <meta charset="UTF-8"> <!-- most common charset-->
+	<title>Meltmedia</title>
+	<meta name="description" content="Meltmedia psd breakout"> <!--description meta has a single comment
+	used to build your web site description for web searches -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="keywords" content="HTML,CSS,meltmedia"> <!-- keywords used for web searches-->
+	<meta name="author" content="Derek Sparenga"> <!-- Author of the page-->
+	
+	<!--LINK TAG-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" media="only screen and max-width:" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+
+	<!-- SCRIPT TAG FOR JAVASCRIPT -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+	<!-- PLACE JAVASCRIPT BELOW STYLESHEETS FOR THE FOLLOWING REASON:
+	Drop the script tags in the <head> of your HTML. 
+	For best performance, you should have them follow after your stylesheet references. 
+	The reason we recommend placing Modernizr in the head is two-fold: 
+	the HTML5 Shiv (that enables HTML5 elements in IE) must execute before the <body>, 
+	and if you’re using any of the CSS classes that Modernizr adds, you’ll want to prevent a FOUC.
+	-->
+	
+
+	
+</head>
+	
+<body>
+<div class="container">
+	<img src="myimages/blueimg.jpg" alt="Main image" id="blueimg" />
+	<div id="paragraph">
+		<p>
+		We're meltmedia and we're on a mission. Quite simply, it's to make our clients' lives easier. We create an Environment where business, technology, and
+		desing experts join forces to deliver innovative and sustainable digital solutions. And we have plenty of geeky fun along the way.
+		</p>
+		<a href="#">See Our Work</a>
+	</div>
+
+	<nav>
+		<ul class="topnav">
+		  <li><a class="active" href="index.html">HOME</a></li>
+		  <li><a href="#hero">WORK</a></li>
+		  <li><a href="#culture">CULTURE</a></li>
+		  <li><a href="#vidbckground">LABS</a></li>
+		  <li><a href="#contactForm">THOUGHTS</a></li>
+		  <li><a href="#footer">CONTACT</a></li>
+		  <li class="icon">
+			<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
+	</nav>
+
+	<script>
+	function myFunction() {
+		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+	}
+	</script>
+
+
+	
+	
+	<img id ="culture" src="myimages/whatwedo.PNG" alt="whatwedo image"class="wow fadeIn"  />
+	<img id="hero" src="myimages/callhero.PNG" alt="callhero image" class="wow fadeIn" />
+	<div id="vidbckground" class="wow fadeIn">
+		<video controls class="wow fadeIn"><source src="PhoenixComicon.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+	</div>
+	<div id="googleMap" class="wow fadeIn"></div>
+	<div id="contactForm" class="wow fadeIn">
+		<h1>Contact <b>Us</b></h1>
+		<p>Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
+		<form>
+			<ul class="form-style-1">
+				<li>
+					<input type="text" name="field1" class="field-divided" placeholder="What is your name?" />&nbsp;<input type="email" name="field2" class="field-divided" placeholder="What is your email address?" />
+				</li>
+				<li>
+					<input type="email" name="field3" class="field-long" placeholder="What is your superpower?"/>
+				</li>
+				<li>
+					<textarea name="field5" id="field5" class="field-long field-textarea" placeholder="What is your mission?"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Send Message" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	<div id="footer"/>meltmedia &copy copyright 2014 - Interactive <b>Superheroes</b></div>
+</div>
+</body>
+
+</html>
