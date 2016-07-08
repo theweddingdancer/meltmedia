@@ -1,0 +1,81 @@
+<!doctype html>
+<!--
+	Basic HTML page setup.
+-->
+<html lang="en">
+<head>
+	<!--TITLE-->
+	<title>Web site 1</title>
+	<!--META TAG-->
+    <meta charset="UTF-8"> <!-- most common charset-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free Web tutorials"> <!--description meta has a single comment
+	used to build your web site description for web searches -->
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!-- keywords used for web searches-->
+	<meta name="author" content="Derek Sparenga"> <!-- Author of the page-->
+	
+	<!--LINK TAG-->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+
+	<!-- SCRIPT TAG FOR JAVASCRIPT -->
+	<script src="normalize.js" ></script> 
+	<script src="bootstrap/js/bootstrap.js" ></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<!-- PLACE JAVASCRIPT BELOW STYLESHEETS FOR THE FOLLOWING REASON:
+	Drop the script tags in the <head> of your HTML. 
+	For best performance, you should have them follow after your stylesheet references. 
+	The reason we recommend placing Modernizr in the head is two-fold: 
+	the HTML5 Shiv (that enables HTML5 elements in IE) must execute before the <body>, 
+	and if you’re using any of the CSS classes that Modernizr adds, you’ll want to prevent a FOUC.
+	-->
+	
+</head>
+	
+<!--
+<div class="">
+</div>
+-->	
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Derek's</h1>
+			</div>
+			<div class="col-md-4">
+				<nav class="nav">
+					<ul class="nav navbar-default nav-pills">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Facts</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+
+				</nav>
+			</div>
+		</div>
+		<div class="row" id="row2">
+			<h2 class="text-center" id="phrase1">Where cool things happen everyday</h2>
+		</div>
+		<div class="row" id="row3">
+		</div>
+		<div class="row" id="row4">
+			<div class="col-md-2 wow bounceInUp"><h2>We appear as you scroll down.....</h2>
+			</div>
+		</div>
+		<div class="row" id="row5">
+			<div class="col-md-2 col-md-offset-2 text-center wow bounceInUp"><h2>Same as us.....</h2>
+			</div>
+		</div>
+		
+
+	</div>
+	
+			<script>
+              new WOW().init();
+              </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+#phrase1 {
+  padding-top: 200px;
+  font-size: 100px;
+  -webkit-animation: myAppear 3s 1s forwards;
+  opacity: 0; }
+
+#row2 {
+  background-image: url("images/JPEG/landscape.jpg");
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+  height: 800px;
+  opacity: 0;
+  -webkit-animation: myAppear 1s forwards; }
+
+@-webkit-keyframes myAppear {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .25; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .75; }
+  100% {
+    opacity: 1; } }
+nav {
+  line-height: 50px;
+  height: 50px; }
+  nav a {
+    font-size: 25px; }
+
+#row3 {
+  height: 100px; }
+
+#row4 {
+  height: 300px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+#row5 {
+  height: 300px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+/*# sourceMappingURL=styles.css.map */
